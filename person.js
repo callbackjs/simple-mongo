@@ -1,10 +1,11 @@
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/person-db');
+const mongoose = require('mongoose')
+mongoose.Promise = global.Promise
+mongoose.connect('mongodb://localhost:27017/person-db')
 
-var personSchema = mongoose.Schema({
+const personSchema = mongoose.Schema({
   name: String,
-  age: Number
-});
+  age: Number,
+})
 
-var Person = mongoose.model('Person', personSchema);
-module.exports = Person;
+const Person = mongoose.model('Person', personSchema)
+module.exports = Person

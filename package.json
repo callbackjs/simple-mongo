@@ -1,0 +1,11 @@
+{
+  "name": "simple-mongo",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">= 0.6.19",
+    "npm": ">= 1.1.x"
+  },
+  "dependencies": {
+    "mongoose": "^4.6.6"
+  }
+}
